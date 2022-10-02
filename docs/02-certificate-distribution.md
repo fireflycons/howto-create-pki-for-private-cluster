@@ -73,7 +73,7 @@ In the Windows search bar, type `certlm.msc`. It will ask for Administrator perm
 
 ### Import Intermediate CA certificate
 
-1. In the left pane of the certificate manager, expand `Intermediate Certification Authorities`, , right click on `Certificates`, select `All Tasks`, then `Import`, then click `Next` in the first dialog.
+1. In the left pane of the certificate manager, expand `Intermediate Certification Authorities`, right click on `Certificates`, select `All Tasks`, then `Import`, then click `Next` in the first dialog.
 1. For the `File name`, browse to where you have placed the Intermediate CA certificate file
 1. Click Next, and click Next again. The certificate will be imported.
 
@@ -102,3 +102,5 @@ For Linux hosts, we have to do this individually at each machine. You could crea
 1. Import the certificates and select the `Always Trust` option.
 
 ![Mac Keychain](../img/mac-keychain.png)
+
+Next: [Install cert-manager](./03-cert-manager.md)
