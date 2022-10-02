@@ -6,7 +6,7 @@ This is a follow on from my tutorial on [installing MetalLB and Ingress](https:/
 
 In this guide, we will create a Public Key Infrastructure (PKI) using [easy-rsa](https://github.com/OpenVPN/easy-rsa) which is a wrapper for `openssl` written in Bourne Shell. We will create a Root CA which is kept locked away, and from that an Intermediate CA which will be used for issuing certificates to cluster workloads using [cert-manager](https://cert-manager.io/). I am not at this point covering management of Certificate Revocation Lists (CRLs), since you would not be passing any of generated certificates outside of your own direct control.
 
-We will then proceed to distribute the certificates to trust store(s) on the network, then set up [cert-manager] in the cluster to create web-serving certificates for cluster services, then demonstrate serving a workload over HTTPS.
+We will then proceed to distribute the certificates to trust store(s) on the network, then set up `cert-manager` in the cluster to create web-serving certificates for cluster services, then demonstrate serving a workload over HTTPS.
 
 # Lab Steps
 
